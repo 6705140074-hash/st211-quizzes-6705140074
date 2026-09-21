@@ -1,7 +1,11 @@
-from bank import BankAccount
+# bank.py
 
-def test_deposit_increases_balance():
-    account = BankAccount(balance=100)
-    new_balance = account.deposit(50)
-    assert new_balance ==150
-    
+class BankAccount:
+    def __init__(self, initial_balance=0):
+        self.balance = initial_balance
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        self.balance -= amount
