@@ -1,4 +1,4 @@
-from bank import BankAccount
+from bank import BankAccount # bank.py
 
 # Shared global object across tests
 shared_account = BankAccount(100)

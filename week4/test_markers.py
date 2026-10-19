@@ -15,3 +15,4 @@ def test_full_report_generation():
 @pytest.mark.regression
 def test_old_bug_stays_fixed():
     assert True
+    
